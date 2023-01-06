@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>React Web-Based Game</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"
+              ><strong></strong> Portfolio - React Web-Based Game</a
+            >
+            <ul class="icons">
+              <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+              <li>
+                <a
+                  href="mailto: chatterjee.rishav.17@gmail.com"
+                  class="fas fa-envelope"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rishav-chatterjee17/"
+                  class="fab fa-linkedin-in"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RishavChatterjee17"
+                  class="fab fa-github"
+                ></a>
+              </li>
+            </ul>
+          </header>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>React Web-Based Game</h1>
+            </header>
+
+            <span class="image main"
+              ><img src="images/g2insightengine.png" alt=""
+            /></span>
+
+            <p>A browser-based game made with react/redux.</p>
+            <p>
+              This project consists of 2 games both using the same game design
+              but slightly different implementations. The game was made using
+              the MERN stack. The frontend was made using React (hook-based). I
+              used redux for managing the entire application state. It also uses
+              XState for game-state management. The styling was done using
+              Fluent UI which helps to make pages responsive. This project
+              supports multiple languages, implemented using localization
+              library i18next. The backend was developed using Node/Express and
+              it also contain a PHP Rest API.
+            </p>
+            <p>
+              The objective of this project was to build a complete modular yet
+              scalable 3-tier client-server architecture project. This project
+              suppors multiplayer gameplay as well as chat system. The project
+              was done with accesssibility in mind.
+            </p>
+
+            <hr class="major" />
+
+            <section id="banner">
+              <div class="content">
+                <h2>Game 1</h2>
+                <p>
+                  The idea of Game 1 was to create a browser-based multiplayer
+                  game where poeple to together solve a crime and accuse a
+                  culprit. One of the main feature of Game 1 was to implement
+                  and "Evidence Map", which I implemented using React Flow.
+                </p>
+                <p>
+                  First I setup a react project with typescript template. I
+                  wanted to have different components, each of which did a
+                  specific task. Inorder to pass data between the components
+                  easily I decided to have an application state manager. This is
+                  where Redux helped me. Setting up Redux takes time, but once
+                  it is done it is very useful. For smaller projects Redux might
+                  not make much sense. But for a large projects with many
+                  components it is definitely a good choice to have Redux.
+                </p>
+                <p>
+                  The UI was developed using FLuent UI which is Microsofts
+                  solution for implementing CSS. Fluent UI does have its
+                  limitation when trying to customize the UI exactly to you
+                  liking but it does help to quick start easily as it has
+                  predefined custom elements like buttons, progress bars, nav
+                  bars and so on.
+                </p>
+              </div>
+              <span class="image object">
+                <img src="images/evidencemap.png" alt="" />
+              </span>
+            </section>
+
+            <hr class="major" />
+
+            <section id="banner">
+              <span class="image left">
+                <img src="images/g2activitynotebook.png" alt="" />
+              </span>
+              <div class="content">
+                <h2>Game 2</h2>
+                <p>
+                  Game 2 consists of the same design principles and technologies
+                  used for Game 1. Contrary to the "Evidence Map" in Game 1, we
+                  have "Insight Engine" which also uses React Flow. The
+                  difference being Insight Engine was a lot more complex to
+                  build as each node on the screen consists of 5-6 layers of
+                  masked svgs which has to be carefully positioned and styled.
+                </p>
+                <p>
+                  One other key feature of both the games were the Journal in
+                  Game1 and Notebook in Game 2. These features work the almost
+                  the same way and is used to help players keep a track of their
+                  progress by logging completed activities in the
+                  journal/notebook.
+                </p>
+                <p>
+                  Journal/Notebook components are made of 3-4 separate smaller
+                  components and this is where Redux was truly helpful. Redux
+                  maintains a particular "slice" of different states of game. At
+                  any given moment we can fetch these slices to get the data we
+                  want. React hooks like useEffect(), useCallback(), useMemo()
+                  are used to update the redux.
+                </p>
+              </div>
+            </section>
+
+            <hr class="major" />
+
+            <section id="banner">
+              <div class="content">
+                <h2>Common Features</h2>
+                <p>
+                  One of the most important features of both the games is the
+                  XState. XState helps us to manage game state and tranistion
+                  from a step to any step based on some conditions. At eaech
+                  step we can dispatch any action to update the redux. With
+                  XState I setup up the entire flow of the games, i.e., players
+                  first joins the game -> plays the tutorial -> plays an
+                  activity -> get some score -> updates the notebook/journal ->
+                  analyze evidence map -> finally accusses the culprit ->
+                  summary/end screen. This entire flow was done using XState.
+                </p>
+                <p>
+                  The game also contains support for multiple languages. This
+                  was acheived using the i18next library, which is a
+                  localization library. This project was done with accessibility
+                  and UX in mind. I wanted players to easily navigate the game
+                  thus I made sure the buttons were visible, the color contrast
+                  ratio was at least 3:1 ratio, and aria-tags were implemented
+                  thorughtout the game.
+                </p>
+              </div>
+              <span class="image right">
+                <img src="images/g1Xstate.png" alt="" />
+              </span>
+            </section>
+
+            <hr class="major" />
+
+            <div class="box alt">
+              <h2>Gallery</h2>
+              <div class="row gtr-50 gtr-uniform">
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/carpanel.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/g1desktop.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/g1leadselection2.png" alt=""
+                  /></span>
+                </div>
+                <!-- Break -->
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/g1rollerlock.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/g2activitynotebook2.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/g2activitypreview.png" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="major" />
+
+            <h2>Retrospective</h2>
+            <p>
+              Ofcourse, this project is not perfect. There are better ways some
+              of the features could have been implemented. Such as components in
+              between Game 1 and 2 should be shared. Although that is not the
+              case. For sake of completion I remade the same component from Game
+              1 for Game 2 instead of making it resuable. However, this is only
+              true for some of the components, not all. Also I faced some
+              restrictions with Fluent UI. Fluent UI is great for getting a head
+              start with a project however it lacks options to customize you
+              application. Any modifaction to Fluent UI is time taking and would
+              have been better to research a different alternative.
+            </p>
+            <p>
+              The challenging part of this project was to make sure all the
+              different tools and technologies like XState, Redux, i18Next,
+              Fluent UI, the PHP API and the Node Backend all worked in harmony.
+              This project helped me to understand how API works and how to
+              implement multiplayer features to an application. Although it is
+              not perfect, it is a complete solution for a client-server
+              architecture.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <!-- <li><a href="generic.html">Recent Projects</a></li>
+									<li><a href="elements.html">All Projects</a></li> -->
+              <li>
+                <span class="opener">Coding Projects</span>
+                <ul>
+                  <li><a href="#">Project 1</a></li>
+                  <li><a href="#">Project 2</a></li>
+                  <li><a href="#">Project 3</a></li>
+                  <li><a href="#">Project 4</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#">Adipiscing</a></li>
+									<li>
+										<span class="opener">Another Submenu</span>
+										<ul>
+											<li><a href="#">Lorem Dolor</a></li>
+											<li><a href="#">Ipsum Adipiscing</a></li>
+											<li><a href="#">Tempus Magna</a></li>
+											<li><a href="#">Feugiat Veroeros</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Maximus Erat</a></li>
+									<li><a href="#">Sapien Mauris</a></li> -->
+              <li>
+                <span class="opener">Music Projects</span>
+                <ul>
+                  <li><a href="#">Project 1</a></li>
+                  <li><a href="#">Project 2</a></li>
+                  <li><a href="#">Project 3</a></li>
+                  <li><a href="#">Project 4</a></li>
+                </ul>
+              </li>
+              <!-- <li>
+										<span class="opener">Blogs</span>
+										<ul>
+											<li><a href="#">Blog 1</a></li>
+											<li><a href="#">Blog 2</a></li>
+											<li><a href="#">Blog 3</a></li>
+											<li><a href="#">Blog 4</a></li>
+										</ul>
+									</li> -->
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Research Work</a></li>
+              <li><a href="#">About Me</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <!-- <section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section> -->
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Contact:</h2>
+            </header>
+            <!-- <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p> -->
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="mailto: chatterjee.rishav.17@gmail.com"
+                  >chatterjee.rishav.17@gmail.com</a
+                >
+              </li>
+              <li class="icon solid fa-phone">519 560 1262</li>
+              <li class="icon solid fa-folder">
+                <a href="https://www.linkedin.com/in/rishav-chatterjee17/"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="icon solid fa-box">
+                <a href="https://github.com/RishavChatterjee17">GitHub</a>
+              </li>
+              <!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+									Nashville, TN 00000-0000</li> -->
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <!-- <footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
