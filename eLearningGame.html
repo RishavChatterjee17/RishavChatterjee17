@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>React Web-Based Game</title>
+    <title>E-Learning Management System</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -23,7 +23,7 @@
           <!-- Header -->
           <header id="header">
             <a href="index.html" class="logo"
-              ><strong></strong> Portfolio - React Web-Based Game</a
+              ><strong></strong> Portfolio - E-Learning Management System</a
             >
             <ul class="icons">
               <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -54,80 +54,88 @@
           <!-- Content -->
           <section>
             <header class="main">
-              <h1>React Web-Based Game</h1>
+              <h1>E-Learning Management System</h1>
             </header>
 
             <span class="image main"
-              ><img src="images/g2insightengine.png" alt=""
+              ><img src="images/afterlogin.png" alt=""
             /></span>
 
-            <p>A browser-based game made with react/redux.</p>
             <p>
-              This project consists of 2 games both using the same game design
-              but slightly different implementations. The game was made
-              using the MERN stack. The frontend was made using React
-              (hook-based). I used redux for managing the entire application
-              state. It also uses XState for game-state management. The styling
-              was done using Fluent UI which helps to make pages responsive.
-              This project supports multiple languages, implemented using
-              localization library i18next. The backend was developed using
-              Node/Express and it also contain a PHP Rest API.
+              A Java servlet to create an E-Learning Online Platform to learn
+              programming concepts, participate in quizes and post your
+              questions/answers in the forum. This servlet was made using Java
+              Enterprise Edition and JSP (Java Server Pages) was used to create
+              the dynamic web application.
             </p>
             <p>
-              The objective of this project was to build a complete modular yet scalable
-              3-tier client-server architecture project. This project suppors
-              multiplayer gameplay as well as chat system. The project was done with accesssibility in mind.
+              I chose to make a servlet for this project rather than a CGI
+              (Common Gateway Interface) as Servlets have many advantages over
+              CGI. Some of the advantages are better performance: as each
+              request is assigned a thread instead of a process, hence,
+              requests/responses are faster and it can handle more number of
+              clients. JVM (Java Virtual Machine) also manages servlets so it is
+              portable and robust. Thus we dont need to worry about memory
+              management and memory leaks. Also servlets are more secure than
+              CGIs.
             </p>
 
             <hr class="major" />
 
             <section id="banner">
               <div class="content">
-                <h2>Game 1</h2>
+                <h2>Basic Idea</h2>
                 <p>
-                  The idea of Game 1 was to create a browser-based multiplayer game where poeple to together solve a crime and accuse a culprit. 
-				  One of the main feature of Game 1 was to implement and "Evidence Map", which I implemented using React Flow.	  
+                  The idea of this project was to make a "Hackerrank"-like
+                  online platform for learning how to code, test your knowledge
+                  and have conversations in the public forum.
                 </p>
-				<p>
-					First I setup a react project with typescript template. I wanted to have different components, each of which did a specific task.
-					Inorder to pass data between the components easily I decided to have an application state manager. This is where Redux helped me.
-					Setting up Redux takes time, but once it is done it is very useful. For smaller projects Redux might not make much sense. But for 
-					a large projects with many components it is definitely a good choice to have Redux.	  
-				</p>
-				<p>
-					The UI was developed using FLuent UI which is Microsofts solution for implementing CSS. Fluent UI does have its limitation
-					when trying to customize the UI exactly to you liking but it does help to quick start easily as it has predefined custom elements 
-					like buttons, progress bars, nav bars and so on. 
-				</p>
+                <p>
+                  I started by creating a admin/user register and login. To do
+                  this I set up a SQL Database to store credentials as well as
+                  the content for the forums. I also set up Apache Tomcat to run
+                  the servlet and the JSPs.
+                </p>
+                <p>
+                  From the Flow Diagram on the right we can see the entire scope
+                  of the project from the client side. The forums are logically
+                  separated into question and answer forums which seemed like a
+                  good idea then. Users could take tests, view the forum, post
+                  in the forum, view their profile to view their progress.
+                </p>
               </div>
               <span class="image object">
-                <img src="images/evidencemap.png" alt="" />
+                <img src="images/LVL3DFDfinal.png" alt="" />
               </span>
             </section>
 
             <hr class="major" />
-            
+
             <section id="banner">
-				<span class="image left">
-					<img src="images/g2activitynotebook.png" alt="" />
-				  </span>
+              <span class="image left">
+                <img src="images/forumanswer.png" alt="" />
+              </span>
               <div class="content">
-                <h2>Game 2</h2>
+                <h2>Structure</h2>
+                <p></p>
                 <p>
-					Game 2 consists of the same design principles and technologies used for Game 1. 
-					Contrary to the "Evidence Map" in Game 1, we have "Insight Engine" which also uses React Flow.
-					The difference being Insight Engine was a lot more complex to build as each node on the screen
-					consists of 5-6 layers of masked svgs which has to be carefully positioned and styled.
+                  I wanted to have a realtime player progression feature like
+                  hackerrank based on how many courses a user completes and how
+                  many quizes they participate in. Thus I created a user profile
+                  page, where users could see their progress in realtime.
                 </p>
-				<p>
-					One other key feature of both the games were the Journal in Game1 and Notebook in Game 2. 
-					These features work the almost the same way and is used to help players keep a track of their progress 
-					by logging completed activities in the journal/notebook. 
+                <p>
+                  I made an admin and user registration, signin and logout page.
+                  The credentials for these were stored in the SQL Database. For
+                  adding a bit of security I implemented page sessions so that
+                  user cannot simply enter a URL path and skip singin or access
+                  someone else's account.
                 </p>
-				<p>
-					Journal/Notebook components are made of 3-4 separate smaller components and this is where Redux was truly helpful. 
-					Redux maintains a particular "slice" of different states of game. At any given moment we can fetch these slices to get 
-					the data we want. React hooks like useEffect(), useCallback(), useMemo() are used to update the redux.
+                <p>
+                  The admins were responsible for creating the study material
+                  and questions for quizes. Users could answer other user's
+                  questions on the forum and edit their responses. The admin had
+                  the rights to remove threads from the forum.
                 </p>
               </div>
             </section>
@@ -136,22 +144,22 @@
 
             <section id="banner">
               <div class="content">
-                <h2>Common Features</h2>
+                <h2>Features</h2>
                 <p>
-					One of the most important features of both the games is the XState. XState helps us to manage game state 
-					and tranistion from a step to any step based on some conditions. At eaech step we can dispatch any action to update the redux.
-					With XState I setup up the entire flow of the games, i.e., players first joins the game -> plays the tutorial -> plays 
-					an activity -> get some score -> updates the notebook/journal -> analyze evidence map -> finally accusses the culprit -> summary/end screen. 
-					This entire flow was done using XState.
+                  One of the most important features of the application is to
+                  participate in online quizes and get score in realtime. The
+                  quizes were all in MCQ pattern for easier implementation of
+                  scoring. A score history was maintained to calculate overall
+                  average performance and increase profile progression.
                 </p>
-				<p>
-					The game also contains support for multiple languages. This was acheived using the i18next library, which is a localization library.
-					This project was done with accessibility and UX in mind. I wanted players to easily navigate the game thus I made sure the buttons were visible, 
-					the color contrast ratio was at least 3:1 ratio, and aria-tags were implemented thorughtout the game. 
+                <p>
+                  Users could choose from a variety of courses to study. The
+                  study content consisted of static text stored in XML format
+                  and Youtube videos integrated into the web applications.
                 </p>
               </div>
               <span class="image right">
-                <img src="images/g1Xstate.png" alt="" />
+                <img src="images/screen.jpg" alt="" />
               </span>
             </section>
 
@@ -162,33 +170,33 @@
               <div class="row gtr-50 gtr-uniform">
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/carpanel.png" alt=""
+                    ><img src="images/forumanswerask.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g1desktop.png" alt=""
+                    ><img src="images/forumquesask.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g1leadselection2.png" alt=""
+                    ><img src="images/profile.png" alt=""
                   /></span>
                 </div>
                 <!-- Break -->
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g1rollerlock.png" alt=""
+                    ><img src="images/reg.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g2activitynotebook2.png" alt=""
+                    ><img src="images/sqlvideotutorial.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g2activitypreview.png" alt=""
+                    ><img src="images/log.png" alt=""
                   /></span>
                 </div>
               </div>
@@ -198,17 +206,19 @@
 
             <h2>Retrospective</h2>
             <p>
-				Ofcourse, this project is not perfect. There are better ways some of the features could have been implemented. 
-				Such as components in between Game 1 and 2 should be shared. Although that is not the case. For sake of completion 
-				I remade the same component from Game 1 for Game 2 instead of making it resuable. However, this is only true for some of the 
-				components, not all. Also I faced some restrictions with Fluent UI. Fluent UI is great for getting a head start with a project 
-				however it lacks options to customize you application. Any modifaction to Fluent UI is time taking and would have been better to 
-				research a different alternative.
+              This was probably the first web application I created, hence the
+              UI/UX is not ideal. None of the features were made with
+              accessibility or ease of navigation in mind.
             </p>
             <p>
-				The challenging part of this project was to make sure all the different tools and technologies like XState, Redux, i18Next, 
-				Fluent UI, the PHP API and the Node Backend all worked in harmony. This project helped me to understand how API works and how to 
-				implement multiplayer features to an application. Although it is not perfect, it is a complete solution for a client-server architecture.
+              Another problem is the increased number of SQL queries we needed
+              to run for getting forum data made the request/response slower. I
+              could have stored frequently used data on the frontend thus
+              reducing unecessary requests to the server.
+            </p>
+            <p>
+              Although I added quite some many features, none of the features
+              are flushed out and could benefit from further polishing.
             </p>
           </section>
         </div>
@@ -273,6 +283,8 @@
 										</ul>
 									</li> -->
               <li><a href="#">Journal</a></li>
+              <li><a href="#">Research Work</a></li>
+              <li><a href="#">About Me</a></li>
             </ul>
           </nav>
 
