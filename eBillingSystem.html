@@ -77,28 +77,7 @@
               <div class="content">
                 <h2>Game 1</h2>
                 <p>
-                  The idea of Game 1 was to create a browser-based multiplayer
-                  game where poeple to together solve a crime and accuse a
-                  culprit. One of the main feature of Game 1 was to implement
-                  and "Evidence Map", which I implemented using React Flow.
-                </p>
-                <p>
-                  First I setup a react project with typescript template. I
-                  wanted to have different components, each of which did a
-                  specific task. Inorder to pass data between the components
-                  easily I decided to have an application state manager. This is
-                  where Redux helped me. Setting up Redux takes time, but once
-                  it is done it is very useful. For smaller projects Redux might
-                  not make much sense. But for a large projects with many
-                  components it is definitely a good choice to have Redux.
-                </p>
-                <p>
-                  The UI was developed using FLuent UI which is Microsofts
-                  solution for implementing CSS. Fluent UI does have its
-                  limitation when trying to customize the UI exactly to you
-                  liking but it does help to quick start easily as it has
-                  predefined custom elements like buttons, progress bars, nav
-                  bars and so on.
+                  SAMPLETEXT
                 </p>
               </div>
               <span class="image object">
@@ -115,27 +94,7 @@
               <div class="content">
                 <h2>Game 2</h2>
                 <p>
-                  Game 2 consists of the same design principles and technologies
-                  used for Game 1. Contrary to the "Evidence Map" in Game 1, we
-                  have "Insight Engine" which also uses React Flow. The
-                  difference being Insight Engine was a lot more complex to
-                  build as each node on the screen consists of 5-6 layers of
-                  masked svgs which has to be carefully positioned and styled.
-                </p>
-                <p>
-                  One other key feature of both the games were the Journal in
-                  Game1 and Notebook in Game 2. These features work the almost
-                  the same way and is used to help players keep a track of their
-                  progress by logging completed activities in the
-                  journal/notebook.
-                </p>
-                <p>
-                  Journal/Notebook components are made of 3-4 separate smaller
-                  components and this is where Redux was truly helpful. Redux
-                  maintains a particular "slice" of different states of game. At
-                  any given moment we can fetch these slices to get the data we
-                  want. React hooks like useEffect(), useCallback(), useMemo()
-                  are used to update the redux.
+                  SAMPLETEXT
                 </p>
               </div>
             </section>
@@ -146,24 +105,7 @@
               <div class="content">
                 <h2>Common Features</h2>
                 <p>
-                  One of the most important features of both the games is the
-                  XState. XState helps us to manage game state and tranistion
-                  from a step to any step based on some conditions. At eaech
-                  step we can dispatch any action to update the redux. With
-                  XState I setup up the entire flow of the games, i.e., players
-                  first joins the game -> plays the tutorial -> plays an
-                  activity -> get some score -> updates the notebook/journal ->
-                  analyze evidence map -> finally accusses the culprit ->
-                  summary/end screen. This entire flow was done using XState.
-                </p>
-                <p>
-                  The game also contains support for multiple languages. This
-                  was acheived using the i18next library, which is a
-                  localization library. This project was done with accessibility
-                  and UX in mind. I wanted players to easily navigate the game
-                  thus I made sure the buttons were visible, the color contrast
-                  ratio was at least 3:1 ratio, and aria-tags were implemented
-                  thorughtout the game.
+                  SAMPLETEXT
                 </p>
               </div>
               <span class="image right">
@@ -171,9 +113,9 @@
               </span>
             </section>
 
-            <hr class="major" />
+            <!-- <hr class="major" /> -->
 
-            <div class="box alt">
+            <!-- <div class="box alt">
               <h2>Gallery</h2>
               <div class="row gtr-50 gtr-uniform">
                 <div class="col-4">
@@ -191,7 +133,6 @@
                     ><img src="images/g1leadselection2.png" alt=""
                   /></span>
                 </div>
-                <!-- Break -->
                 <div class="col-4">
                   <span class="image fit"
                     ><img src="images/g1rollerlock.png" alt=""
@@ -208,31 +149,13 @@
                   /></span>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <hr class="major" />
 
             <h2>Retrospective</h2>
             <p>
-              Ofcourse, this project is not perfect. There are better ways some
-              of the features could have been implemented. Such as components in
-              between Game 1 and 2 should be shared. Although that is not the
-              case. For sake of completion I remade the same component from Game
-              1 for Game 2 instead of making it resuable. However, this is only
-              true for some of the components, not all. Also I faced some
-              restrictions with Fluent UI. Fluent UI is great for getting a head
-              start with a project however it lacks options to customize you
-              application. Any modifaction to Fluent UI is time taking and would
-              have been better to research a different alternative.
-            </p>
-            <p>
-              The challenging part of this project was to make sure all the
-              different tools and technologies like XState, Redux, i18Next,
-              Fluent UI, the PHP API and the Node Backend all worked in harmony.
-              This project helped me to understand how API works and how to
-              implement multiplayer features to an application. Although it is
-              not perfect, it is a complete solution for a client-server
-              architecture.
+              SAMPLETEXT
             </p>
           </section>
         </div>
