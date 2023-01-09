@@ -46,20 +46,20 @@
             <div class="content">
               <header>
                 <h1>Hi, I’m Rishav!<br /></h1>
-                <p>Software Developer | Game Programmer</p>
+                <p>Full Stack Software Developer | Game Developer</p>
               </header>
               <p>
-                Professional Full-Stack Software Developer with 3 years of
+                Professional full-stack software developer with 3 years of
                 experience. Research-based masters degree in Computer Science
                 from the University of Windsor in Computational Geometry.
-                Passionate Game Programmer and budding song writer :)
+                Passionate game developer and budding song writer :)
               </p>
               <ul class="actions">
                 <li onclick="onLinkClick()">
                   <a href="#projects" class="button big">See Projects</a>
                 </li>
-                <li>
-                  <a href="thesis.html" class="button big">See Research</a>
+                <li onclick="onLinkClick1()">
+                  <a href="#research" class="button big">See Research</a>
                 </li>
                 <li>
                   <a href="aboutMe.html" class="button big">About Me!</a>
@@ -79,6 +79,11 @@
           <script>
             function onLinkClick() {
               document.getElementsByTagName("projects")[3].scrollIntoView();
+            }
+          </script>
+          <script>
+            function onLinkClick1() {
+              document.getElementsByTagName("research")[3].scrollIntoView();
             }
           </script>
 
@@ -111,38 +116,41 @@
               <li><a href="thesis.html" class="button">More</a></li>
             </ul>
           </section> -->
-
-          <section id="banner">
-            <div class="content">
-              <header class="major">
-                <h2>Recent Work</h2>
-              </header>
-              <p>
-                For my
-                <a
-                  href="https://www.proquest.com/openview/ed91ec0653078eadec068438dd9c310a/1.pdf?pq-origsite=gscholar&cbl=18750&diss=y"
-                  >research thesis
-                </a>
-                on the <i>packing</i> problem, I along with my supervisor Dr.
-                Biniaz created an algorithm that provides an alternate approach
-                to the solution provided by
-                <a href="https://arxiv.org/abs/1707.05440"> Aichholzer 2017 </a>
-                to pack multiple spanning paths into a finite point set. With
-                our approach it might be even possible to extend the number of
-                spanning paths packed from 2 to 3.
-              </p>
-              <p>
-                This reasearch is a contribution to the field of Computational
-                Geometry which I specialized in for my master's degree at the
-                University of Windsor.
-              </p>
-              <ul class="actions">
-                <li><a href="thesis.html" class="button">More</a></li>
-              </ul>
-            </div>
-            <span class="image object">
-              <a href="thesis.html"><img src="images/thesis.PNG" alt="" /></a>
-            </span>
+          <section id="research">
+            <section id="banner" style="margin-top: -100px">
+              <div class="content">
+                <header class="major">
+                  <h2>Recent Work</h2>
+                </header>
+                <p>
+                  For my
+                  <a
+                    href="https://www.proquest.com/openview/ed91ec0653078eadec068438dd9c310a/1.pdf?pq-origsite=gscholar&cbl=18750&diss=y"
+                    >research thesis
+                  </a>
+                  on the <i>packing</i> problem, I along with my supervisor Dr.
+                  Biniaz created an algorithm that provides an alternate
+                  approach to the solution provided by
+                  <a href="https://arxiv.org/abs/1707.05440">
+                    Aichholzer et al. 2017
+                  </a>
+                  to pack multiple spanning paths into a finite point set. With
+                  our approach it might be even possible to extend the number of
+                  spanning paths packed from 2 to 3.
+                </p>
+                <p>
+                  This reasearch is a contribution to the field of Computational
+                  Geometry which I specialized in for my master's degree at the
+                  University of Windsor.
+                </p>
+                <ul class="actions">
+                  <li><a href="thesis.html" class="button">More</a></li>
+                </ul>
+              </div>
+              <span class="image object">
+                <a href="thesis.html"><img src="images/thesis.PNG" alt="" /></a>
+              </span>
+            </section>
           </section>
 
           <!-- Section -->
@@ -225,7 +233,7 @@
                 </ul>
               </article>
               <article>
-                <a href="#" class="image"
+                <a href="gmtkGame.html" class="image"
                   ><img src="images/game_backround_(rough_draft).png" alt=""
                 /></a>
                 <h3>Game Jam Project in Unity</h3>
@@ -236,7 +244,7 @@
                   the game.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="gmtkGame.html" class="button">More</a></li>
                 </ul>
               </article>
             </div>
@@ -251,102 +259,108 @@
               <article>
                 <!-- <span class="icon fa-gem"></span> -->
                 <span class="image left">
-                  <img src="images/boxjourney3.PNG" alt="" />
+                  <a href="boxJourney.html"
+                    ><img src="images/boxjourney3.PNG" alt=""
+                  /></a>
                 </span>
                 <div class="content">
                   <h3>Box Journey</h3>
                   <!-- <p>A brower based game made with MERN stack. Has a PHP API, node/Express Backend and a React (with hooks) frotnend. Includes accessibility features and uses other tools like XState for state management and i18Next library for localization.</p> -->
                   <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                    dolore. Proin aliquam facilisis ante interdum. Sed nulla
-                    amet lorem feugiat tempus aliquam.
+                    An orthographic camera puzzle platformer made with Unity.
                   </p>
                   <ul class="actions">
-                    <li><a href="#" class="button">More</a></li>
+                    <li><a href="boxJourney.html" class="button">More</a></li>
                   </ul>
                 </div>
               </article>
+              <!-- <span class="icon solid fa-paper-plane"></span> -->
+
               <article>
                 <!-- <span class="icon solid fa-paper-plane"></span> -->
                 <span class="image left">
-                  <img src="images/horrortxt.PNG" alt="" />
+                  <a href="textHorror.html"
+                    ><img src="images/horrortxt.PNG" alt=""
+                  /></a>
                 </span>
                 <div class="content">
                   <h3>Text-Based Horror Game</h3>
                   <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                    dolore. Proin aliquam facilisis ante interdum. Sed nulla
-                    amet lorem feugiat tempus aliquam.
+                    A text-based narrative driven horror game to experiment with
+                    game-state-management in Unity.
                   </p>
                   <ul class="actions">
-                    <li><a href="#" class="button">More</a></li>
+                    <li><a href="textHorror.html" class="button">More</a></li>
                   </ul>
                 </div>
               </article>
-              <article>
+              <!-- <article>
                 <span class="image left">
-                  <img src="images/metroidvania1.PNG" alt="" />
+                  <a href="#"
+                    ><img src="images/metroidvania1.PNG" alt=""
+                  /></a>
                 </span>
                 <div class="content">
                   <h3>Time Travel 2D</h3>
                   <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                    dolore. Proin aliquam facilisis ante interdum. Sed nulla
-                    amet lorem feugiat tempus aliquam.
+                    A simple 2D time travel prototype to test portal-doorway
+                    mechanism.
                   </p>
                   <ul class="actions">
                     <li><a href="#" class="button">More</a></li>
                   </ul>
                 </div>
-              </article>
-              <article>
-                <!-- <span class="icon solid fa-signal"></span> -->
-                <span class="image left">
-                  <img src="images/pianotiles.PNG" alt="" />
-                </span>
-                <div class="content">
-                  <h3>Piano Tiles Prototype</h3>
-                  <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                    dolore. Proin aliquam facilisis ante interdum. Sed nulla
-                    amet lorem feugiat tempus aliquam.
-                  </p>
-                  <ul class="actions">
-                    <li><a href="#" class="button">More</a></li>
-                  </ul>
-                </div>
-              </article>
-              <article>
-                <!-- <span class="icon solid fa-signal"></span> -->
+              </article> -->
+
+              <!-- <article>
+                <span class="icon solid fa-signal"></span>
                 <span class="image left">
                   <img src="images/voira.PNG" alt="" />
                 </span>
                 <div class="content">
                   <h3>An Audio-Visual Novel - Voira</h3>
                   <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                    dolore. Proin aliquam facilisis ante interdum. Sed nulla
-                    amet lorem feugiat tempus aliquam.
+                    A audio-visual narrative driven gameplay prototype. This project contains
+                    original assets, original music and gameplay.
                   </p>
                   <ul class="actions">
                     <li><a href="#" class="button">More</a></li>
+                  </ul>
+                </div>
+              </article> -->
+              <article>
+                <!-- <span class="icon solid fa-signal"></span> -->
+                <span class="image left">
+                  <a href="openWorld.html"
+                    ><img src="images/two.PNG" alt=""
+                  /></a>
+                </span>
+                <div class="content">
+                  <h3>3D Open World Prototype</h3>
+                  <p>
+                    A 3D sidescroller prototype inspired by the games like GTA
+                    and The Last Night.
+                  </p>
+                  <ul class="actions">
+                    <li><a href="openWorld.html" class="button">More</a></li>
                   </ul>
                 </div>
               </article>
               <article>
                 <!-- <span class="icon solid fa-signal"></span> -->
                 <span class="image left">
-                  <img src="images/two.PNG" alt="" />
+                  <a href="pianoTiles.html"
+                    ><img src="images/pianotiles.PNG" alt=""
+                  /></a>
                 </span>
                 <div class="content">
-                  <h3>3D Open World Prototype</h3>
+                  <h3>Piano Tiles Prototype</h3>
                   <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                    dolore. Proin aliquam facilisis ante interdum. Sed nulla
-                    amet lorem feugiat tempus aliquam.
+                    A prototype for piano-tiles game but with a golf ball, where
+                    you have to control the ball to play the correct tune.
                   </p>
                   <ul class="actions">
-                    <li><a href="#" class="button">More</a></li>
+                    <li><a href="pianoTiles.html" class="button">More</a></li>
                   </ul>
                 </div>
               </article>
@@ -377,10 +391,16 @@
               <li>
                 <span class="opener">Coding Projects</span>
                 <ul>
-                  <li><a href="#">Project 1</a></li>
-                  <li><a href="#">Project 2</a></li>
-                  <li><a href="#">Project 3</a></li>
-                  <li><a href="#">Project 4</a></li>
+                  <li><a href="reactGame.html">React Web-Based Game</a></li>
+                  <li><a href="unityGridGame.html">Unity Engine Grid Game</a></li>
+                  <li><a href="eLearningGame.html">E-Learning Management System</a></li>
+                  <li><a href="eBillingSystem.html">Electrcitiy Billing System</a></li>
+                  <li><a href="platformer2Dgame.html">2D Platformer Game</a></li>
+                  <li><a href="gmtkGame.html">Game Jam Typing Game</a></li>
+                  <li><a href="boxJourney.html">Puzzle Platformer</a></li>
+                  <li><a href="textHorror.html">Text Horror Game</a></li>
+                  <li><a href="openWorld.html">3D Open World Prototype</a></li>
+                  <li><a href="pianoTiles.html">Piano Tiles Prototype</a></li>
                 </ul>
               </li>
               <!-- <li><a href="#">Adipiscing</a></li>
@@ -455,7 +475,7 @@
                   >chatterjee.rishav.17@gmail.com</a
                 >
               </li>
-              <li class="icon solid fa-phone">519 560 1262</li>
+              <li class="icon solid fa-phone">+1 519 560 1262</li>
               <li class="icon solid fa-folder">
                 <a href="https://www.linkedin.com/in/rishav-chatterjee17/"
                   >LinkedIn</a

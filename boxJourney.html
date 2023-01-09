@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>2D Platformer Game</title>
+    <title>Puzzle Platformer</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -23,7 +23,7 @@
           <!-- Header -->
           <header id="header">
             <a href="index.html" class="logo"
-              ><strong></strong> Portfolio - 2D Platformer Game</a
+              ><strong></strong> Portfolio - Puzzle Platformer</a
             >
             <ul class="icons">
               <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -54,125 +54,99 @@
           <!-- Content -->
           <section>
             <header class="main">
-              <h1>2D Platformer Game</h1>
+              <h1>Puzzle Platformer</h1>
             </header>
 
             <span class="image main"
-              ><img src="images/aijam.PNG" alt=""
+              ><img
+                style="pointer-events: none"
+                src="images/boxjourney3.PNG"
+                alt=""
             /></span>
+
+            <p>A orthographic camera puzzle platformer game wiht Unity.</p>
             <p>
-              A Unity Project to create a 2D plaformer-action game with a bit of
-              puzzle solving.
+              This project was probably my first Unity project and it is very
+              simple. The idea of the game is to avoid traps (red structures)
+              while collecting nectar (yellow cylinders).
             </p>
             <p>
-              The objective of this project was to build a metroidvania-like
-              platformer game using free assets from the unity asset store. I
-              wanted to focus more on the gameplay logic instead of creating the
-              2D sprites myself.
+              I was mainly experimenting with Unity animation system and
+              collision system.
             </p>
 
             <hr class="major" />
 
             <section id="banner">
               <div class="content">
-                <h2>Playing with Unity</h2>
+                <h2>Basic Idea</h2>
                 <p>
-                  The idea for the UI was to have a minimalistic art with more
-                  empahsis on the combat. The player could run, jump, slide,
-                  fight with a sword, and cast fireballs towards enemy.
+                  Interestingly I wanted to add a story to the game. The player
+                  would collect nectars while avoiding traps and bring back a
+                  tree of life.
                 </p>
                 <p>
-                  All the assets were downloaded from Unity Asset store. I just
-                  arranged the different assets together to create a bit of
-                  challenge while navigating. The enemies behavior is something
-                  I never finished working on. Apart from the enemies, the other
-                  challenge was the environmental physics-based puzzle like
-                  jumping on a stone see-saw to throw a boulder over a wall or
-                  filling a spike-hole with rocks in order to proceed.
+                  Tehcnically it was very simple to implement. The core gameplay
+                  was just avoiding obstacles which meant I could just replciate
+                  the last scene and create variations of the traps.
+                </p>
+                <p>
+                  Since this was my first Unity project I learnt a lot about
+                  collisions, rigidbodys and how to add behavior to objects with
+                  scripts.
                 </p>
               </div>
               <span class="image object">
-                <img src="images/aijam1.PNG" alt="" />
+                <img
+                  style="pointer-events: none"
+                  src="images/boxjourney1.PNG"
+                  alt=""
+                />
               </span>
             </section>
 
             <hr class="major" />
-
-            <section id="banner">
-              <span class="image left">
-                <img src="images/aijam3.PNG" alt="" />
-              </span>
-              <div class="content">
-                <h2>Scenario</h2>
-                <p>
-                  The game was a part of AI Game Jam project. Unfortunately I
-                  couldnt complete the game and it still needs to be worked on.
-                  The main emphasis of this project was to create enemy behavior
-                  (AI) that would feel a bit challenging.
-                </p>
-                <p>
-                  I went with a dark and gloomy theme and chose primitive shapes
-                  like circle, square, for a lot of the environemental sprites.
-                  Another important part of this project is I included my own
-                  composition for the background score, which I did by palying
-                  and recording my guitar in Ableton Live and using some synth
-                  presets.
-                </p>
-              </div>
-            </section>
-
-            <!-- <hr class="major" /> -->
 
             <!-- <div class="box alt">
               <h2>Gallery</h2>
               <div class="row gtr-50 gtr-uniform">
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/carpanel.png" alt=""
+                    ><img
+                      style="pointer-events: none"
+                      src="images/boxjourney1.PNG"
+                      alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g1desktop.png" alt=""
+                    ><img
+                      style="pointer-events: none"
+                      src="images/boxjourney3.PNG"
+                      alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/g1leadselection2.png" alt=""
+                    ><img
+                      style="pointer-events: none"
+                      src="images/g1leadselection2.png"
+                      alt=""
                   /></span>
-                </div>
-                <div class="col-4">
-                  <span class="image fit"
-                    ><img src="images/g1rollerlock.png" alt=""
-                  /></span>
-                </div>
-                <div class="col-4">
-                  <span class="image fit"
-                    ><img src="images/g2activitynotebook2.png" alt=""
-                  /></span>
-                </div>
-                <div class="col-4">
-                  <span class="image fit"
-                    ><img src="images/g2activitypreview.png" alt=""
-                  /></span>
-                </div>
+                </div>     
               </div>
             </div> -->
 
-            <hr class="major" />
-
             <h2>Retrospective</h2>
             <p>
-              This project is unfinished to this day and I intend to go back and
-              complete the game. The aspect which wanted me to make the game was
-              the enemy AI. I intended to make different enemies and no two
-              enemies would have the same ability and then procdurally
-              generating enemies randomly on different stages.
+              Although the idea and the gameplay was simple, this project helped
+              me understand a lot about game-dev. With procedural level
+              generation we could make the gameplay more fun and unique which I
+              intend to implement in the near future.
             </p>
             <p>
-              I intended to make different enemies and no two enemies having
-              the same ability and then randomly spawning different enemies 
-              on different stages.
+              I also thought of adding enemies that patrol the map to make the
+              game more challenging.
             </p>
           </section>
         </div>
