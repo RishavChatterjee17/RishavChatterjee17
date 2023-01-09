@@ -369,6 +369,10 @@ sup {
   top: -0.5em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 blockquote {
   border-left: solid 3px rgba(210, 215, 217, 0.75);
   font-style: italic;

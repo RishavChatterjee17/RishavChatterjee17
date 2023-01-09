@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>E-Learning Management System</title>
+    <title>About Me</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -23,7 +23,7 @@
           <!-- Header -->
           <header id="header">
             <a href="index.html" class="logo"
-              ><strong></strong> Portfolio - E-Learning Management System</a
+              ><strong></strong> Portfolio - About Me</a
             >
             <ul class="icons">
               <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -52,174 +52,106 @@
           </header>
 
           <!-- Content -->
-          <section>
-            <header class="main">
-              <h1>E-Learning Management System</h1>
-            </header>
-
-            <span class="image main"
-              ><img src="images/afterlogin.png" alt=""
-            /></span>
-
-            <p>
-              A Java servlet to create an E-Learning Online Platform to learn
-              programming concepts, participate in quizes and post your
-              questions/answers in the forum. This servlet was made using Java
-              Enterprise Edition and JSP (Java Server Pages) was used to create
-              the dynamic web application.
-            </p>
-            <p>
-              I chose to make a servlet for this project rather than a CGI
-              (Common Gateway Interface) as Servlets have many advantages over
-              CGI. Some of the advantages are better performance: as each
-              request is assigned a thread instead of a process, hence,
-              requests/responses are faster and it can handle more number of
-              clients. JVM (Java Virtual Machine) also manages servlets so it is
-              portable and robust. Thus we dont need to worry about memory
-              management and memory leaks. Also servlets are more secure than
-              CGIs.
-            </p>
-
-            <hr class="major" />
-
             <section id="banner">
               <div class="content">
-                <h2>Basic Idea</h2>
-                <p>
-                  The idea of this project was to make a "Hackerrank"-like
-                  online platform for learning how to code, test your knowledge
-                  and have conversations in the public forum.
-                </p>
-                <p>
-                  I started by creating a admin/user register and login. To do
-                  this I set up a SQL Database to store credentials as well as
-                  the content for the forums. I also set up Apache Tomcat to run
-                  the servlet and the JSPs.
-                </p>
-                <p>
-                  From the Flow Diagram on the right we can see the entire scope
-                  of the project from the client side. The forums are logically
-                  separated into question and answer forums which seemed like a
-                  good idea then. Users could take tests, view the forum, post
-                  in the forum, view their profile to view their progress.
-                </p>
+                <h2>So..</h2>
+                <ul>
+                  <li>
+                    I am fron Kolkata, West Bengal, India. I currently live in Vancouver, BC, Canada.
+                  </li>
+                  <br />
+                  <li>
+                    I completed my undegraduate studies from West Bengal University of Technology (B.Tech in Computer Science) in 2017.
+                    In 2017 I got recruited by Cognizant Technology Solutions and started working as Programmer Analyst.
+                  </li>
+                  <br />
+                  <li>
+                    In 2019 I left Cognizant to purse higher studies in Canada. I completed my masters degree (research-based) in 
+                    Computer Science with a specialization in Computation Geometry from University of Windsor, ON, Canada.
+                  </li>
+                  <br />
+                  <li>
+                    I graduated in 2021 from University of Windsor and got an opportunity to work at Anemeone Hug Interactive (a Vancouver-based) 
+                    game-dev studio, as a Programmer.
+                  </li>
+                  <br />
+                  <li>
+                    I am into music and a budding song-writer by hobby. I like pencil sketching and solving puzzles like rubix cubes. I teach guitar 
+                    to young individuals and also trying to be a better musician.
+                  </li>
+                  <br />
+                  <li>
+                    I am interested in game-dev projects/work/jams, software engineering/developement work, research on computation geoemtry and in music composition. Please feel free contact me 
+                    if my profile interests you!
+                  </li>
+                </ul>
               </div>
               <span class="image object">
-                <img src="images/LVL3DFDfinal.png" alt="" />
+                <img style="width: 700px;" src="images/Avatar_Rishav.png" alt="" />
               </span>
             </section>
 
             <hr class="major" />
 
-            <section id="banner">
-              <span class="image left">
-                <img src="images/forumanswer.png" alt="" />
-              </span>
-              <div class="content">
-                <h2>Structure</h2>
-                <p></p>
-                <p>
-                  I wanted to have a realtime player progression feature like
-                  hackerrank based on how many courses a user completes and how
-                  many quizes they participate in. Thus I created a user profile
-                  page, where users could see their progress in realtime.
-                </p>
-                <p>
-                  I made an admin and user registration, signin and logout page.
-                  The credentials for these were stored in the SQL Database. For
-                  adding a bit of security I implemented page sessions so that
-                  user cannot simply enter a URL path and skip singin or access
-                  someone else's account.
-                </p>
-                <p>
-                  The admins were responsible for creating the study material
-                  and questions for quizes. Users could answer other user's
-                  questions on the forum and edit their responses. The admin had
-                  the rights to remove threads from the forum.
-                </p>
-              </div>
-            </section>
+            <!-- <hr class="major" /> -->
 
-            <hr class="major" />
-
-            <section id="banner">
-              <div class="content">
-                <h2>Features</h2>
-                <p>
-                  One of the most important features of the application is to
-                  participate in online quizes and get score in realtime. The
-                  quizes were all in MCQ pattern for easier implementation of
-                  scoring. A score history was maintained to calculate overall
-                  average performance and increase profile progression.
-                </p>
-                <p>
-                  Users could choose from a variety of courses to study. The
-                  study content consisted of static text stored in XML format
-                  and Youtube videos integrated into the web applications.
-                </p>
-              </div>
-              <span class="image right">
-                <img src="images/screen.jpg" alt="" />
-              </span>
-            </section>
-
-            <hr class="major" />
-
-            <div class="box alt">
+            <!-- <div class="box alt">
               <h2>Gallery</h2>
               <div class="row gtr-50 gtr-uniform">
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/forumanswerask.png" alt=""
+                    ><img src="images/carpanel.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/forumquesask.png" alt=""
+                    ><img src="images/g1desktop.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/profile.png" alt=""
-                  /></span>
-                </div>
-                <!-- Break -->
-                <div class="col-4">
-                  <span class="image fit"
-                    ><img src="images/reg.png" alt=""
+                    ><img src="images/g1leadselection2.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/sqlvideotutorial.png" alt=""
+                    ><img src="images/g1rollerlock.png" alt=""
                   /></span>
                 </div>
                 <div class="col-4">
                   <span class="image fit"
-                    ><img src="images/log.png" alt=""
+                    ><img src="images/g2activitynotebook2.png" alt=""
+                  /></span>
+                </div>
+                <div class="col-4">
+                  <span class="image fit"
+                    ><img src="images/g2activitypreview.png" alt=""
                   /></span>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <hr class="major" />
-
-            <h2>Retrospective</h2>
-            <p>
-              This was probably the first web application I created, hence the
-              UI/UX is not ideal. None of the features were made with
-              accessibility or ease of navigation in mind.
-            </p>
-            <p>
-              Another problem is the increased number of SQL queries we needed
-              to run for getting forum data made the request/response slower. I
-              could have stored frequently used data on the frontend thus
-              reducing unecessary requests to the server.
-            </p>
-            <p>
-              Although I added quite some many features, none of the features
-              are flushed out and could benefit from further polishing.
-            </p>
+            <h2>Contact</h2>
+            <ul class="icons">
+              <li>
+                <a
+                  href="mailto: chatterjee.rishav.17@gmail.com"
+                  class="fas fa-envelope"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rishav-chatterjee17/"
+                  class="fab fa-linkedin-in"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/RishavChatterjee17"
+                  class="fab fa-github"
+                ></a>
+              </li>
+            </ul>
           </section>
         </div>
       </div>
